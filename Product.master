@@ -1,0 +1,316 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Product.master.cs" Inherits="Product_MasterPage" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="KEYWORDS" content="<%=_site_keyWords%>" />
+    <meta name="TITLE" content="<%= _site_Name%>" />
+    <meta name="ROBOTS" content="INDEX, FOLLOW" /> 
+    <meta name="COPYRIGHT" content="<%= _site_Copy%>" />
+    <meta name="DESCRIPTION" content="<%= _site_Description %>" />
+    <!--[if lte IE 6]>
+        <link type="text/css" rel="stylesheet" href="<% = Global.globalSiteStylePath %>/multiBoxIE6.css" />
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="<% = Global.globalSiteStylePath %>/global.css" />
+    <link rel="stylesheet" type="text/css" href="<% = Global.globalSiteStylePath %>/mootabs1.2.css" />
+    <link rel="stylesheet" type="text/css" href="<% = Global.globalSiteStylePath %>/Product.css" />
+
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <script type="text/javascript" charset="utf-8" src="js/mootools-1.2.1-core.js"></script>
+
+    <script type="text/javascript" charset="utf-8" src="js/more-slider.js"></script>
+
+    <script type="text/javascript" charset="utf-8" src="js/morphlist.js"></script>
+
+    <script type="text/javascript" charset="utf-8" src="js/barackslideshow.js"></script>
+
+    <script type="text/javascript" charset="utf-8" src="js/SimpleTabs.js"></script>
+
+    <script type="text/javascript" charset="utf-8" src="js/multibox.js"></script>
+
+    <script type="text/javascript" charset="utf-8" src="js/overlay.js"></script>
+    
+    <!-- Added on login modification -->
+    <!-- Add the ajaxObject to work on everypage that need it -->
+    <script src="js/ajaxObject.js" type="text/javascript"></script>
+    <!-- /Add the ajaxObject to work on everypage that need it -->
+
+    <script type="text/javascript">
+		/* <![CDATA[ */
+        window.addEvent('domready', function() {
+	        /**
+	         * Element with id 'demo-block' is the container and all h4-elements
+	         * inside are fetched as tab headers. The following elements are their
+	         * content.
+	         */
+	        var tabs = new SimpleTabs('footTabs', {
+		        selector: 'h4'
+	        });
+	        /**
+	         * Anchors with # are not unobtrusive, its only for showing the addTab method
+	         */
+        });
+		/* ]]> */
+    </script>
+
+    <!-- For Dropdown Finder -->
+
+    <script type="text/javascript" charset="utf-8" src="js/dropdown.js"></script>
+
+    <script language="javascript" type="text/javascript">
+var textComeFrom = '';
+         function imprime()
+        {
+            var cont = document.getElementById("print").innerHTML;                   
+            document.impresion.contenido.value = cont;
+            document.impresion.submit();
+        }
+    </script>
+
+    <!-- For Dropdown Finder -->
+
+    <script type="text/javascript" src="js/MooFlow.js"></script>
+
+    <script type="text/javascript">
+    window.addEvent('domready', function(){
+	//call multiBox
+	var initMultiBox = new multiBox({
+		mbClass: '.mb',//class you need to add links that you want to trigger multiBox with (remember and update CSS files)
+		container: $(document.body),//where to inject multiBox
+		descClassName: 'multiBoxDesc',//the class name of the description divs
+		path: './Files/',//path to mp3 and flv players
+		useOverlay: true,//use a semi-transparent background. default: false;
+		maxSize: {w:560, h:400},//max dimensions (width,height) - set to null to disable resizing
+		addDownload: true,//do you want the files to be downloadable?
+		pathToDownloadScript: 'js/ForceDownload.asp',//if above is true, specify path to download script (classicASP and ASP.NET versions included)
+		addRollover: false,//add rollover fade to each multibox link
+		addOverlayIcon: true,//adds overlay icons to images within multibox links
+		addChain: false,//cycle through all images fading them out then in
+		recalcTop: true,//subtract the height of controls panel from top position
+		addTips: false//adds MooTools built in 'Tips' class to each element (see: http://mootools.net/docs/Plugins/Tips)
+	});
+});
+    </script>
+<script language="javascript" type="text/javascript">
+    
+    function TopSearch(){
+        window.location.href= 'result.aspx?txtadv=' + document.getElementById("topSearch").value +''
+    }
+    
+    </script>
+            <!-- Script to follow link-->
+    <script src="js/followLink.js" type="text/javascript"></script>
+    <title><% Response.Write(pageTitleBar); %></title>
+</head>
+<body onclick="cleanSug();">
+    <div id="wrapper">
+        <div id="head">
+            <a href="home.aspx">
+                <div class="logo">
+                </div>
+            </a>
+            <div class="login">
+                <div class="loginNav">
+                    <ul>
+                        <%if ((bool)Session[SiteConstants.UserValidLogin])
+                          { %>
+                        <li>Welcome <strong>
+                            <% = Session[SiteConstants.UserFullName]%></strong> (<a href="home.aspx?ulo=0">not you?</a>)&nbsp;&nbsp;
+                        </li>
+                        <li><a href="MyAccount.aspx">My Account </a></li>
+                        <li><a href="wishlist.aspx">Wish List </a></li>
+                        <%}
+                          else
+                          { %>
+                        <li><a href="#htmlElement" id="mb15" class="mb" title="" rel="type:element">Login</a></li>
+                        <%} %>
+                          <li><a href="cart.aspx">View Cart</a></li>
+                        <%if (!(bool)Session[SiteConstants.UserValidLogin])
+                          { %>
+                        <li class="last" style="background-image: none;"><a href="newAccount.aspx">Register</a></li>
+                        <%} %>
+                    </ul>
+                </div>
+                <div class="phoneNumber">
+                    <h1>
+                        <% =_site_Phone %>
+                    </h1>
+                </div>
+                <div class="topSearch">
+                    <a href="javascript:TopSearch();">
+                        <img src="<% = Global.globalSiteImagesPath %>/searchLeft.jpg" border="0" />
+                    </a>
+                    <input name="topSearch" type="text" id="topSearch" value="" size="30" onkeyup="getSug(event);" />
+                </div>
+                <div class="advSearch">
+                    <a href="result.aspx?ba=true"><strong>+</strong> Advanced Search</a>
+                </div>
+            </div>
+            <div id="itemList" style="position: absolute; float: right; z-index: 9099; right: 0px;
+                top: 87px; width: 291px; border: 0;">
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+        <div id="topNav">
+            <div id="topLeft">
+                <asp:PlaceHolder ID="PlaceHolder_topRight" runat="server"></asp:PlaceHolder>
+            </div>
+        </div>
+        <asp:PlaceHolder ID="PlaceHolder_bread" runat="server"></asp:PlaceHolder>
+        <div id="mainCont">
+            <asp:ContentPlaceHolder ID="HomeContent_Master" runat="server"></asp:ContentPlaceHolder>
+            <div class="clear">
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+        <div id="footer">
+            <div id="footNav">
+                <div id="footLeft">
+                    <div id="footRight">
+                        <div class="italicFooter">
+                            <em><% = _site_TagLine%></em></div>
+                        <div class="share">
+                            <% =Global.globalSocialTwist %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footCont">
+                <div id="footTabs" class="footList1">
+                    <asp:PlaceHolder ID="PlaceHolder_SiteContact" runat="server"></asp:PlaceHolder>
+                </div>
+                <div class="footList">
+                    <h3>
+                        Resources</h3>
+                    <ul>
+                        <asp:PlaceHolder ID="PlaceHolder_ResourceCenter" runat="server"></asp:PlaceHolder>
+                    </ul>
+                </div>
+                <div class="footList">
+                    <h3>
+                        About
+                        <%=_site_Name%></h3>
+                    <ul>
+                        <asp:PlaceHolder ID="PlaceHolder_AboutUs" runat="server"></asp:PlaceHolder>
+                    </ul>
+                </div>
+                <div class="footList" style="background-image: none;">
+                    <h2>
+                        Sign Up!</h2>
+ 
+                    <p><br />
+                        Set your Communication Preferences<br />Choose to receive Email Newsletters, <br />Catalogs or Special Offers.
+                    </p>
+                    <br />
+                        <% 
+                          Site s = new Site();
+                          if ((bool)Session[SiteConstants.UserValidLogin])
+                          {
+                              Response.Write("<a href=\"emailsignup.aspx\"><img src=\"" + Global.globalSiteImagesPath + "/footersignUp.jpg\" alt=\"sign up\" border=\"0\" /></a>");
+                          }
+                          else
+                          {
+                              Response.Write("<a href=\"#htmlElement\" id=\"mb15\" class=\"mb\" rel=\"type:element\" onClick=\"followLink='emailsignup.aspx';clear_follow();\"><img src=\"" + Global.globalSiteImagesPath + "/footersignUp.jpg\" alt=\"sign up\" border=\"0\" /></a>");
+                          }
+                       %>
+                </div>
+                <div class="clear">
+                </div>
+                <div class="footBL">
+                    <% =_site_Copy %></div>
+                <div class="footBR">
+                    <h1>
+                        <% =_site_Phone %>&nbsp;
+                        Toll Free</h1>
+                    <ul>
+                        <li><a href="SiteMap.aspx">Site Map</a> | </li>
+                        <li><a href="generic_x.aspx?LandingId=<% = _site_Privacy %>">Privacy Policy</a> |</li>
+                        <li><a href="generic_x.aspx?LandingId=<% = _site_Term %>">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="htmlElement" class="mbHidden" style="visibility: visible;">
+            <div class="quote">
+                <div class="quoteTop">
+                    <div class="popTitle">
+                        Login
+                    </div>
+                </div>
+                <div class="quoteBody">
+                    <!-- The original Form was removed to change it for an iFrame -->
+                        <iframe src="https://commerce.sunburst.com/Sitelogin.aspx" width="100%" height="275px" style="overflow: hidden;" frameborder="0"></iframe><!-- The SiteLogin.aspx has modifications too-->
+                    <!-- /The original Form was removed to change it for an iFrame -->
+                </div>
+                <div class="quoteTButt">
+                </div>
+            </div>
+        </div>
+        <div style="clear: both; height: 0; line-height: 0; overflow: hidden;">
+        </div>
+            <div id="ShareThis" class="mbHidden">
+                <div class="quote">
+                    <div class="quoteTop">
+                        <div class="popTitle">
+                            Share This</div>
+                    </div>
+                    <div class="quoteBody">
+                        <iframe src="share.aspx?urls=url&sContent=Contenido simple&content=Contenido HTML&title=Titulo de la entrada&username=Username"
+                            width="100%" height="450" style="overflow: hidden;" frameborder="0"></iframe>
+                    </div>
+                    <div class="quoteTButt">
+                    </div>
+                </div>
+            </div>
+            <div style="clear: both; height: 0; line-height: 0; overflow: hidden;">
+            </div>
+            <div id="Purchasing" class="mbHidden">
+                <div class="quote">
+                    <div class="quoteTop">
+                        <div class="popTitle">
+                            Purchasing Options</div>
+                    </div>
+                    <div class="quoteBody">
+                        <iframe src="Purchasing_Information_Win.aspx" width="100%" height="750" style="overflow: hidden scroll; overflow-x: hidden;" frameborder="0"></iframe>
+                    </div>
+                    <div class="quoteTButt">
+                    </div>
+                </div>
+            </div>
+            <div style="clear: both; height: 0; line-height: 0; overflow: hidden;">
+            </div>
+            <div id="HtmlBulk" style="display:none;">
+                <div class="quote">
+                    <div class="quoteTop">
+                        <div class="popTitle">
+                            Bulk Options</div>
+                    </div>
+                    <div class="quoteBody">    
+                        <div class="contChangePass">
+                        <h1></h1>
+                        <div class="contChangePass">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sapien ipsum, lobortis et, egestas nec, sodales eget, lorem. Sed facilisis molestie augue. Donec justo. Donec dapibus venenatis justo. Vivamus rutrum, nulla in aliquet vulputate.</p>
+                        </div>            
+                        <div class="contControlRequest">
+                            <div style="margin-left:190px; width:157px; height:26px;"><input type="image" src="<% = Global.globalSiteImagesPath %>/btn_RequestQuoteBulkitem.jpg" width="157" height="26"/> </div>
+                        </div>
+                        <div class="contControlPass">
+                            <div class="btnControlPass"><a href="#"><img src="<% = Global.globalSiteImagesPath %>/buttonClse.jpg" alt="" width="51" height="18"/></a></div>
+                        </div>
+                        <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="quoteTButt">
+                    </div>
+                </div>
+            </div>
+            <div style="clear: both; height: 0; line-height: 0; overflow: hidden;">
+            </div>
+       
+        <% = Global.globalGAscript %>
+</body>
+</html>

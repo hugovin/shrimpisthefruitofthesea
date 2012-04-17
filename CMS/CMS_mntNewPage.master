@@ -1,0 +1,156 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="CMS_mntNewPage.master.cs" Inherits="CMS_CMS_mntNewPage" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <title>CMS</title>
+    <script src="js/jquery-1.4.4.js" type="text/javascript"></script>
+    <script src="js/jquery.ui.core.js" type="text/javascript"></script>
+    <script src="js/jquery.ui.widget.js" type="text/javascript"></script>
+    <script src="js/jquery.ui.tabs.js" type="text/javascript"></script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="wrapper"> 
+            <div class="header"> 
+                <a href="#"><img src="imagesCss/logo.jpg" alt="CMS" border="0" /></a>    
+            </div> 
+            <div class="login-info"> 
+                <div id="admin_name" runat="server">
+                </div>       
+                <div class="LoginOptions">
+                    <a href="CMS_MainSite.aspx">
+                        <img src="imagesCss/home-icon.jpg" alt="Home" border="0" align="absmiddle" />
+                    </a>
+                    &nbsp;
+                    Home
+                    &nbsp; |&nbsp; 
+                    <a href="CMS_Login.aspx">
+                        <img src="imagesCss/close-icon.jpg" alt="Close" border="0" align="absmiddle" />
+                    </a>
+                    &nbsp;
+                    Logout
+                </div>   
+            </div> 
+            <div class="menuHolder"> 
+                <div class="menu"> 
+                    <div id="Div_Content" runat="server" visible="false" >
+                    </div>                               
+                    <div id="div_TopNavigation" runat="server">
+                    </div>
+                </div> 
+            </div>    
+            <div class="breadcrumb"> 
+            
+                <asp:SiteMapPath ID="SiteMapPath1" runat="server" Font-Names="Verdana" Font-Size="0.8em"
+                PathSeparator=" " ParentLevelsDisplayed="6">
+                    <PathSeparatorStyle Font-Bold="True" ForeColor="#507CD1" />
+                    <CurrentNodeStyle ForeColor="#333333" />
+                    <NodeStyle Font-Bold="True" ForeColor="#284E98" />
+                    <RootNodeStyle Font-Bold="True" ForeColor="#507CD1" />                    
+                </asp:SiteMapPath>
+                <a href="javascript:history.back(1)">
+                    <span id="btn_back"><img src="images/btn_Back.png" style="border:0px" /></span>
+                </a> 
+            </div>
+            <div class="MainContainer2"> 
+                <div  class="titulos2">
+                    Sections inside <%Response.Write(RCAbout); %>&nbsp;&nbsp;&nbsp;<img src="images/arrow1.png" />
+                </div> 
+                <div id="contCajas2"> 
+                    <div class="cdro_caja2"> 
+                        <div id="div_Generic" runat="server">
+                        </div>
+                    </div>
+                    <div class="clear">
+                    </div>
+                    <asp:Button ID="btn_New" CssClass="class_addNew" runat="server" Text="" OnClick="btn_New_Click" Visible="false" >
+                    </asp:Button>   
+                </div>
+                <div class="clear"></div> 
+                <div id="div_templates" runat="server" visible="false">
+                    <div id="contCajas4">
+                        <div id="contCajas5">
+                            <!-- este div permanecera oculto -->
+                            <table width="70%" height="40px" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td>
+                                        Page Title:
+                                    </td>
+                                    <td>
+                                        <input id="txt_NewPageTitle" class="class_file" onkeypress="visibleArea();" name="txt_NewPageTitle" type="text" runat="server" />                        
+                                    </td>
+                                    <td>
+                                        Related To:
+                                    </td>
+                                    <td>
+                                        <asp:DropDownList ID="SelectGeneric" runat="server">
+                                    </asp:DropDownList>
+                                    </td>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr align="center">
+                                    <td colspan="3">
+                                        <asp:Label ID="LbTitle" runat="server" Font-Bold="True" ForeColor="#CC0000"></asp:Label>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="clear">
+                        </div>
+                        <!-- este div permanecera oculto -->
+                        <div id="contCajas6" style="visibility:hidden">
+                            <asp:ImageButton  ImageUrl="imagesCss/templateA.jpg" BorderWidth="0" CssClass="class_template" ID="btn_genericA"
+                                 runat="server" ToolTip="Template A " AlternateText="" OnClick="btn_genericA_Click" />
+                             <asp:ImageButton ID="btn_genericB" ImageUrl="imagesCss/templateB.jpg" CssClass="class_template"
+                                 runat="server" OnClick="btn_genericB_Click" />
+                             <asp:ImageButton   ID="btn_genericC" ImageUrl="imagesCss/templateC.jpg" CssClass="class_template"
+                                 runat="server" OnClick="btn_genericC_Click" />
+                             <asp:ImageButton   ID="btn_genericD" ImageUrl="imagesCss/templateD.jpg" CssClass="class_template"
+                                 runat="server" OnClick="btn_genericD_Click" />
+                             <asp:ImageButton   ID="btn_genericE" ImageUrl="imagesCss/templateE.jpg" CssClass="class_template"
+                                 runat="server" OnClick="btn_genericE_Click" />
+                        </div>
+                        <div class="clear">
+                        </div>
+                    </div>
+                    <br />
+                </div> 
+                <asp:ContentPlaceHolder ID="GenericTemplate" runat="server">
+                    <div id="div_templatesArea" runat="server"></div>
+                </asp:ContentPlaceHolder>
+                <div class="push"></div> 
+            </div> 
+        </div>
+        <div id="htmlElement" name="htmlElement" style="width:683px; position:absolute; margin:-300px 0 0 45%; background-color:#FFFFFF; visibility:hidden; border:solid 5px #999999; top: 625px; left: -53px;"> 
+            <div style="width:315px; padding:5px;">    
+                <div id="div_landingPage">
+                    <br />
+                    Name:
+                    <br />
+                    <input type="text" class="class_texto2" value="<%Response.Write(nameGene); %>" name="txtRename"/>
+                    <br />
+                    <br />
+                    <table>
+                        <tr>
+                            <td><asp:Button ID="btn_CancelLand" runat="server" OnClick="btn_CancelLand_Click" CssClass="class_Cancel" /></td>
+                            <td><asp:Button ID="btn_SaveLand" runat="server" OnClick="btn_SaveLand_Click" CssClass="class_btnSave" /></td>
+                        </tr>
+                    </table>         
+                </div>   
+            </div>
+        </div>
+    </form>
+</body>
+<script type="text/javascript">
+    function visibleArea(){
+        document.getElementById('contCajas6').style.visibility = 'visible';
+    } 
+</script>
+<%if (tamplates == true) { Response.Write("<script type=\"text/javascript\">document.getElementById('contCajas6').style.visibility = 'visible';</script>"); } %>      
+<%if (Rename == true) { Response.Write("<script type=\"text/javascript\">document.getElementById('htmlElement').style.visibility = 'visible';</script>"); } %>      
+</html>

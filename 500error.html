@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>The URL you requested was not found</title>
+<script type="text/javascript">
+	var url = window.location.host;
+	if(url.indexOf("sunburst") > 0){
+		document.write('<link rel="stylesheet" type="text/css" href="css2/errorStyle.css" />');
+	}else{
+		document.write('<link rel="stylesheet" type="text/css" href="css/errorStyle.css" />');
+	}
+</script>
+
+</head>
+
+<body>
+  <div id="main-content">
+                    <div>
+                        <div class="boxURLRequested">
+                            <div class="topURLRequested"></div>
+                            <div class="mainURLRequested">
+                            	<div class="contURLRequested">
+                                <img id="errorImage" src="images/logoER.png" alt=""  width="236" height="59" style="padding:5px 0px 20px 0"/>
+                                <h1>The Web page you requested is not available while offline.</h1><br />
+                                <p>Please try again a Few in minutes</p></div>
+                            </div>
+
+                            <div class="bottonURLRequested"></div>
+                        </div>
+                    </div>
+                    <div class="goToHomepage"><p>Click here to go to the <a href="home.aspx">Homepage</a> </p>
+                    </div>
+               </div>     
+                  
+<script type="text/javascript">
+	if(url.indexOf("sunburst") > 0){
+		document.getElementById('errorImage').src = "images2/logoER.png";
+	}
+	
+</script>             
+</body>
+</html>
+

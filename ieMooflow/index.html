@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="author" content="Tobias Wetzel" />
+<title>MooFlow V0.2 for MooTools 1.2</title>
+<link rel="stylesheet" type="text/css" href="../css/global.css" />
+
+<script type="text/javascript" src="../js/mootools-1.2.1-core.js"></script>
+<script type="text/javascript" src="../js/mootools-1.2-more.js"></script>
+<script type="text/javascript" src="js/MooFlow.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+
+	var myMooFlowPage = {
+	
+		start: function(){
+	
+			var mf = new MooFlow($('MooFlow'), {
+				startIndex: 2,
+				useSlider: true,
+				useAutoPlay: false,
+				useCaption: true,
+				useResize: false,
+				useMouseWheel: false,
+				useKeyInput: true
+			});
+			
+		}
+		
+	};
+	
+	window.addEvent('domready', myMooFlowPage.start);
+	
+/* ]]> */
+</script>
+</head>
+<body>
+
+  
+
+</body>
+</html>

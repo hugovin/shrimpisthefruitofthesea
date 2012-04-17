@@ -1,0 +1,22 @@
+﻿DIV .test
+{
+    color:Gray;
+    }
+    .test TABLE
+    {
+        border:solid 1px black;
+        }
+        .test TABLE TH
+        {
+            color:White;
+            font-size:10px;
+            font-weight:bold;
+            background-color:Gray;
+            }
+            .test TABLE TD
+            {
+                color:Black;
+                font-family:Arial Narrow;
+                font-size:10px;
+                }
+   

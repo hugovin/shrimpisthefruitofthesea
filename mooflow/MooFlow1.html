@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="MooFlow1.css" />
+<script type="text/javascript" src="http://www.outcut.de/js/mootools-1.2-core.js"></script>
+<script type="text/javascript" src="http://www.outcut.de/js/mootools-1.2-more.js"></script>
+<script type="text/javascript" src="MooFlow1.js"></script>
+<script type="text/javascript">
+var myMooFlowPage = {
+
+	start: function(){
+		/* MooFlow instance with the complete UI and White Skin */
+		var mf = new MooFlow($('MooFlow'), {
+			bgColor: '#fff',
+			useSlider: true,
+			useAutoPlay: true,
+			useCaption: true,
+			useResize: true,
+			useMouseWheel: true,
+			useKeyInput: true,
+			useViewer: true
+		});		
+	}
+	
+};
+
+window.addEvent('domready', myMooFlowPage.start);
+
+</script>
+
+
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<div id="MooFlow">
+		<img src="http://www.outcut.de/MooFlow/img/icons/cinema_display.png" title="Cinema Display" alt="Große Ideen brauchen Platz. Die Apple Cinema Displays." />
+		<img src="http://www.outcut.de/MooFlow/img/icons/macpro.png" title="Mac Pro" alt="Der neue 8-Core Standard." />
+		<img src="http://www.outcut.de/MooFlow/img/icons/macmini.png" title="Mac Mini" alt="Kleiner mini. Viel Leopard." />
+		<img src="http://www.outcut.de/MooFlow/img/icons/cinema_display.png" title="Cinema Display" alt="Große Ideen brauchen Platz. Die Apple Cinema Displays." />
+		<img src="http://www.outcut.de/MooFlow/img/icons/macpro.png" title="Mac Pro" alt="Der neue 8-Core Standard." />
+		<img src="http://www.outcut.de/MooFlow/img/icons/macmini.png" title="Mac Mini" alt="Kleiner mini. Viel Leopard." />
+	</div>
+
+
+</body>
+</html>

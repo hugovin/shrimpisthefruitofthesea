@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="https://my.edresources.com/service/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="https://my.edresources.com/service/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="https://my.edresources.com/service/">
+      <s:import namespace="http://www.w3.org/2001/XMLSchema" />
+      <s:element name="SecUserInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SecUserInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SecUserInfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SecUserLogOut">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="LoginID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="LoginGUID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SecUserLogOutResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SecUserLogOutResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SecUserInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:SecUserInfo" />
+  </wsdl:message>
+  <wsdl:message name="SecUserInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:SecUserInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="SecUserLogOutSoapIn">
+    <wsdl:part name="parameters" element="tns:SecUserLogOut" />
+  </wsdl:message>
+  <wsdl:message name="SecUserLogOutSoapOut">
+    <wsdl:part name="parameters" element="tns:SecUserLogOutResponse" />
+  </wsdl:message>
+  <wsdl:portType name="LogMeSecureSoap">
+    <wsdl:operation name="SecUserInfo">
+      <wsdl:input message="tns:SecUserInfoSoapIn" />
+      <wsdl:output message="tns:SecUserInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SecUserLogOut">
+      <wsdl:input message="tns:SecUserLogOutSoapIn" />
+      <wsdl:output message="tns:SecUserLogOutSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="LogMeSecureSoap" type="tns:LogMeSecureSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SecUserInfo">
+      <soap:operation soapAction="https://my.edresources.com/service/SecUserInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SecUserLogOut">
+      <soap:operation soapAction="https://my.edresources.com/service/SecUserLogOut" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="LogMeSecure">
+    <wsdl:port name="LogMeSecureSoap" binding="tns:LogMeSecureSoap">
+      <soap:address location="https://my.edresources.com/service/LogMeSecure.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

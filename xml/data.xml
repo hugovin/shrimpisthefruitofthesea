@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+<img>
+<src>images/newsite.jpg</src>
+<title>New Site Announcement</title>
+<a href="" target="_self" /> 
+</img>
+<img>
+<src>images/eBook_theatre_030510.jpg</src>
+<title>Save with eBooks</title>
+<a href="product.aspx?p=90405" target="_self" /> 
+</img>
+<img>
+<src>images/TTL4_theatre_111109.jpg</src>
+<title>TTL4 wins Award</title>
+<a href="product.aspx?p=88306" target="_self" /> 
+</img>
+<img>
+<src>images/SB_iclicker_theatre.jpg</src>
+<title>Engage with i>clicker</title>
+<a href="product.aspx?p=89208" target="_self" /> 
+</img>
+<img>
+<src>images/Theater_Funding.jpg</src>
+<title>Funding Resources</title>
+<a href="generic_d.aspx?id=192&amp;TypeGen=1&amp;am=2&amp;asm=4" target="_self" /> 
+</img>
+</data>
+

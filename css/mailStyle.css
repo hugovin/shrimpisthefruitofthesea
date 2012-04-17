@@ -1,0 +1,8 @@
+﻿body {
+}
+
+.controlProfile, #controlPlaceOrder, .controlSummary{
+
+                display:none;
+
+}

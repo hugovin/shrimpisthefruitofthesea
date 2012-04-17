@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="getResourceTrialLink.aspx.cs" Inherits="getResourceTrialLink" %>

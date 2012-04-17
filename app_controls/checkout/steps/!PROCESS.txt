@@ -1,0 +1,8 @@
+﻿1) If the user is NOT logged in, we enter the checkout process with [usertype.ascx]. This user control asks which type of user is checking out
+2) Next, we ask for the billing and shipping information locations with [locations.ascx]. 
+3) Next, we ask for which shipping option the user will be choosing with [shipping.ascx].
+4) Next, we ask which payment option the user will be choosing with [payment.ascx]. If credit card, the user will input their credit card details here
+5) Next, we display a summary of all of the information available with [summary.ascx]. User must press process order to continue. 
+6) Next, if the user paid with a credit cart we would display a thank you with [thankyou.ascx]. If the user paid with a po, we would display the PO options with [po.ascx]
+7) Finally, if the user paid with a PO, after making an action, the user is displayed the thank you message with [thankyou.ascx].
+8) In the thank you message, there is an option to create an account. If the user selects this, an account it created, the current order updated to reflect that account, the shipping locations added to the account, and the entire order stored in that account history.

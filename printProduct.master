@@ -1,0 +1,59 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="printProduct.master.cs" Inherits="printProduct" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />           
+    <link rel="stylesheet" type="text/css" href="<% = Global.globalSiteStylePath %>/print.css" />      
+    <title><% Response.Write(pageTitleBar); %></title>
+    
+    <script type="text/javascript">    
+        function Print(){    
+            window.print(document.getElementById("controlPrint").style.visibility = 'hidden'); 
+            document.getElementById("controlPrint").style.visibility ='visible';
+        }
+        
+        function Close(){         
+            window.close();
+            return false;  
+        }
+    </script>
+    <script type="text/javascript" src="js/centerImages.js"></script> 
+</head>
+<body>
+    <div id="wrapper">
+        <div id="controlPrint" class="PrintBtn"><img src="<% = Global.globalSiteImagesPath %>/printCloseBtn.jpg" onclick="Close();"/><img src="<% = Global.globalSiteImagesPath %>/printBtn.jpg" onclick="Print();"/>
+      	    <div class="clear"></div>
+        </div>
+        <div id="head">
+            <a href="home.aspx">
+                <div class="logo">
+                </div>
+            </a>                        
+            <div class="clear">
+            </div>
+        </div>        
+        <div id="mainCont">                                                  
+            <div id="sidebar-content">	               	
+                <asp:ContentPlaceHolder ID="PlaceHolder_boxImage" runat="server"></asp:ContentPlaceHolder>                  
+                <asp:ContentPlaceHolder ID="PlaceHolder_boxContact" runat="server"></asp:ContentPlaceHolder>   			    
+            </div>
+           <asp:ContentPlaceHolder ID="HomeContent_Master" runat="server"></asp:ContentPlaceHolder>                                                               
+        </div> 
+        <div id="footer">
+        	<div id="footNav">
+        	<div id="footLeft">
+           	    <div id="footRight">
+           	        <div class="italicFooter"><em> &nbsp; <% = _site_TagLine%></em></div></div>
+           	    </div>          
+		    </div>
+            <div class="footCont">
+                 <div id="footTabs" class="footList1">
+                    <asp:PlaceHolder ID="PlaceHolder_SiteContact" runat="server"></asp:PlaceHolder>
+                </div>           	        
+            </div>
+        </div>                          
+    </div>
+</body>
+</html>

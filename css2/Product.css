@@ -1,0 +1,128 @@
+﻿.gradedp
+{
+        float: left;
+    width: 38%;
+    }
+.pConfigure
+{
+        color: #666666;
+    font-size: 21px;
+    font-weight: bold;
+    }
+.confButton
+{
+    margin-top: 10px;
+    }
+    
+.configureTorchDiv
+{
+    margin-left: 30px;
+    }
+.selectState
+{
+    padding: 0px; 
+    margin: 5px;
+    }
+    
+.selectGrade
+{
+    margin-left: 33px;
+    width: 122px; 
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    }
+.tooltip
+{
+    border-color: #666666;
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    float: right;
+    padding: 5px;
+    width: 60%;
+    }
+ 
+ #edition
+ {
+     margin-bottom: 5px; margin-top: 10px;
+     }
+ .tooltiphide
+ {
+     display:none;
+     
+     }
+
+.radioSubject
+{
+    margin-top: 5px; margin-bottom: 5px; margin-left: 70px;
+    }
+#subject
+{
+    margin-bottom: 25px;
+    margin-top: 10px;
+
+    }
+  
+    
+#whiteboard-brand-other
+{
+    margin-top: 5px; margin-bottom: 5px;
+    display:none;
+    }
+
+#lrs-brand-other
+{
+    margin-top: 5px; margin-bottom: 5px;
+    display:none;
+    }
+#whiteboard
+{   
+    margin-bottom: 20px; margin-top: 0px;
+}
+.buttonToRight
+{
+    float:right;
+    }
+    
+    .sub-option1
+{
+    margin-top: 5px; margin-bottom: 5px; margin-left: 240px;
+        display:none;
+    }
+.sub-option1Display
+{
+    margin-top: 5px; margin-bottom: 5px; margin-left: 240px;
+        display:block;
+    }
+    
+.sub-option2
+{
+    margin-top: 5px; margin-bottom: 5px; margin-left: 240px;
+        display:none;
+    }  
+.sub-option2Display
+{
+    margin-top: 5px; margin-bottom: 5px; margin-left: 240px;
+        display:block;
+    } 
+    
+    .sub-option3
+{
+    margin-top: 5px; margin-bottom: 5px; margin-left: 240px;
+        display:none;
+    }  
+    .sub-option3Display
+{
+    margin-top: 5px; margin-bottom: 5px; margin-left: 240px;
+        display:none;
+    } 
+    .sub-option4
+{
+    margin-top: 5px; margin-bottom: 5px; margin-left: 240px;
+        display:none;
+    }  
+    .sub-option4Display
+{
+    margin-top: 5px; margin-bottom: 5px; margin-left: 240px;
+        display:none;
+    }    

@@ -1,0 +1,47 @@
+	  body,div,dl,dt,dd,ol,ul,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+margin: 0;
+padding: 0;
+}
+	  
+		html { font-size: 13px; font-family: "Lucida Grande", Verdana, Arial, sans-serif; }
+		#container{margin:30px auto; width:600px; }
+		#heading {
+			display: block;
+			text-align: center;
+			margin-bottom: 1em;
+		}
+		#heading * {
+			display: inline;
+			padding: 4px;
+			user-select: none;
+			cursor: pointer;
+			vertical-align: middle;
+		}
+		#heading li.active {
+			background-color: #66ccff;
+			border-radius: 3px;
+			-webkit-border-radius: 3px;
+			-opera-border-radius: 3px;
+			-moz-border-radius: 3px;
+		}
+		
+		#wrapper { border: 1px dotted gray; margin: 1em; padding: 1em;}
+		
+			#panes {
+			text-align: justify;
+			border-style: none;
+			margin: 0 1em 0 1em;
+			overflow: auto;
+			}
+		/*.pane{display:none;}*/
+		
+		#panes p {
+		  width: 600px;
+		  margin: 0 auto 1em auto;
+		  line-height: 1.2em;
+		}
+		
+		#panes div div { overflow: hidden; }
+		
+		#previous { float: none; cursor: pointer; }
+		#next { float: none; cursor: pointer; 

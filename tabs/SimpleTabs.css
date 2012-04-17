@@ -1,0 +1,66 @@
+.tab-wrapper
+{
+	background:url(images/tabsCont.jpg) no-repeat;
+	margin:0;	
+	width:753px;
+	height:153px;
+	clear:both;
+	padding:5px;
+}
+.tab-menu
+{
+	margin:					0;
+	padding:				0;
+	list-style:				none;
+	overflow:				auto;
+}
+.tab-menu li
+{
+	margin:					0;
+	padding:				0;
+	float:					left;
+	background:url(images/tab01.jpg) bottom;
+	height:28px;
+	width:148px;
+	display:block;
+	text-align:center;
+		
+}
+.tab-menu li a{
+	text-align:center;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:13px;
+	color:#505050;	
+	font-weight:			bold;
+	height:28px;
+	width:148px;
+	text-decoration:		none;
+	text-align:center;
+	outline:none;
+	line-height:28px;
+}
+.tab-menu li a span{ padding-top:5px;}
+.tab-menu li a:hover,
+.tab-menu li a:focus
+{
+	/* your effect here */
+	
+}
+.tab-menu li.tab-selected a
+{
+	text-decoration:		none;
+	color:#000;
+	background:url(images/tab01.jpg) top left;
+	display: block;
+	text-align:center;	/* your effect here */
+}
+.product{
+	width:250px;
+	height:145px;
+	float:left;
+}
+.tabDivider{ background:url(images/tabDivider.jpg) no-repeat; width:1px; height:145px; float:left;}
+.product h2{ font-family:Verdana, Arial, Helvetica, sans-serif; font-weight:normal; font-size:13px; color:#00529b;}
+.product p{ color:#000; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px;}
+.product img { float:left;} 
+.seeMore{ text-align:right; padding-right:20px; clear:both;}

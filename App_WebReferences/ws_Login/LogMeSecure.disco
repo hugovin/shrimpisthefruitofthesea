@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="https://my.edresources.com/service/LogMeSecure.asmx?wsdl" docRef="https://my.edresources.com/service/LogMeSecure.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="https://my.edresources.com/service/LogMeSecure.asmx" xmlns:q1="https://my.edresources.com/service/" binding="q1:LogMeSecureSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

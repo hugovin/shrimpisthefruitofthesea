@@ -1,0 +1,127 @@
+/*Start GLOBAL*/
+.content{
+	width:auto;
+	height:auto;
+
+}
+
+.content1{
+	width:1024px;
+	height:auto;
+	margin:0 auto;
+
+}
+
+.header{
+	width:450px;
+	
+}
+
+body,td,th {
+	
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+}
+
+
+/*End GLOBAL*/
+
+
+/* Start Login */
+
+.login-box{
+	width:496px;
+	height:240px;
+	margin:auto;
+	margin-top: 200px;	   	 
+	background-image: url(../images/bg-login.jpg);
+	background-repeat:no-repeat;
+	border:none;
+}
+
+.h1{
+	font:bold 20px "arial";
+	padding: 20px 0 0 0;	
+
+}
+
+.options{
+
+}
+
+.login-content{
+	margin: 10px 0 0 180px;
+}
+
+.NewUser{
+	float:left;
+	font-size:10px;
+	padding: 5px 0 0 0;
+
+}
+
+.forgot-pass{
+	font-size:10px;
+	padding: 5px 55px 0 0;
+	float:right;
+}
+
+/* End Sites */
+
+/* Start Sites */
+
+.sites-box{
+	width:496px;
+	height:240px;
+	margin:auto;
+	margin-top: 200px;	   	 
+	background-image: url(../images/bg-site.jpg);
+	background-repeat:no-repeat;
+}
+
+
+/* End Sites */
+
+/*//////// Lightbox ////////////*/
+
+.header-title{
+	font-family:arial;
+	color:#333333;
+	font-size:14px;
+	font-weight:bold;
+	text-align:center;
+	background-color:#CCCCCC;
+	height:41px;
+	padding: 13px 0 0 0;
+}
+
+.browse{
+	background-color:#FFFFFF;
+	border: 1px solid #999999;
+	height:22px;
+
+
+}
+.boxMap
+{ float:left;
+  padding:10px;
+  border:1px;
+  color:#333;
+}
+
+.boxTitle
+{
+    background-color:#DDD;
+     padding:5px; 
+     border: solid 1px #CCC;
+     font-weight:bold;
+    }
+
+
+/*//////// END Lightbox ////////////*/
+

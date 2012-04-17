@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="ER-Project">
+</Property><Property Name="Solution File" Value="C:\ER\ER-Project.sln">
+</Property><Property Name="Date" Value="Friday, October 07, 2011">
+</Property><Property Name="Time" Value="20:36 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="ER-Project.sln" Description="File successfully backed up as C:\ER\Backup\ER-Project.sln">
+</Event><Event ErrorLevel="1" Project="ER" Source="..\ER" Description="Warning: The project file is being backed up to a relative path that differs from the original solution relative path.  The difference in folder hierarchy may create problems in opening or building the backed up solution and project.">
+</Event><Event ErrorLevel="0" Project="" Source="ER-Project.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="ER-Project.sln" Description="Converted">
+</Event></UpgradeLog>

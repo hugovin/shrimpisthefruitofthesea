@@ -1,0 +1,410 @@
+@charset "utf-8";
+/* CSS Document */
+
+.quoteTop{
+	background:url(../images/quoteTop.png) no-repeat;
+	width:560px;
+	height:75px;
+	clear:both;
+}
+
+.popTitle{
+	font-size:14px;
+	color:#FFFFFF;
+}
+
+.popClose{
+	float:right;
+	margin:15px;
+}
+
+.quoteBody{
+	background:url(../images/quoteBody.png) repeat-y;
+	width:560px;
+	height:150px;
+	clear:both;
+}
+
+.quoteTButt{
+	background:url(../images/quoteButt.png) no-repeat;
+	width:560px;
+	height:17px;
+	list-style-image:
+}
+	
+.contHead{
+	padding:5px 15px 45px 10px;
+	clear:both;
+}
+
+.contHead h3{
+	font-size:21px;
+	color:#61a3f1;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	margin-bottom:15px;
+}
+
+.contHead h4{
+	font-size:14px;
+	color:#333;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	margin-bottom:10px;
+}
+
+.contHead p{
+	font-size:12px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	color:#666666;
+}
+
+.prodCont{
+	margin:0 0 0 10px;
+	/*width:721px;*/
+	width: 94%;
+	height:165px;
+	border-top:solid 1px #bcbcbc;
+	clear:both;
+	padding:10px 7px 5px;
+}
+
+.prodContNew{
+	margin:0 0 0 10px;
+	background:url(../images/newProduct.jpg) no-repeat top right;
+	width:721px;
+	height:165px;
+	border-top:solid 1px #bcbcbc;
+	clear:both;
+	padding:10px 7px 5px;
+}
+
+.prodContLine{
+	margin:10px;
+	width:721px;
+	height:1px;
+	border-top:solid 1px #bcbcbc;
+	clear:both;
+	
+}
+
+.prodImg{
+	float:left;
+	width:102px;
+	
+}
+
+.prodDesc{
+	float:left;
+	width:331px;
+	padding: 13px 10px 0 20px;
+}
+
+.prodDesc h2{
+	font-size:14px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	color:#333333;
+	margin-bottom:3px;
+	font-weight: bolder;
+}
+
+.prodDesc h3{
+	font-size:15px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	color:#e67f42;
+	font-weight:bold;
+	margin-bottom:4px;
+}
+
+.prodDesc h4{
+	font-size:12px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	color:#e67f42;
+	text-transform: uppercase;
+	margin-bottom:6px;
+}
+
+.prodDesc h5{
+	 font-size:12px;
+	 font-family:Verdana, Arial, Helvetica, sans-serif;
+	 color:#333333;
+	 margin-bottom:10px;
+}
+
+.prodDesc p{
+	font-size:11px;
+	margin-bottom:15px;
+}
+
+.prodDesc a{
+	color:#61a3f1;
+}
+
+.prodNumber{
+	background:url(../images/specsBg.jpg) no-repeat;
+	float:left;
+	width:127px;
+	margin-top:14px;
+	height: 140px;
+}
+
+.prodNumCont{
+	height:50px;
+	clear:both;
+	padding:12px 0px 18px;
+}
+
+
+.numBG{
+	background: url(../images/specsBgGray.jpg);
+	text-align:center;
+	height:16px;
+	width:103px;
+	margin:5px auto;
+	padding: 2px 0 0 0;
+
+
+	font-size:12px:
+	color:#333;
+	
+}
+
+.numBG span{
+	color:#e67f42;
+}
+
+.prodNumber p{
+	text-align:center;
+	font-size:11px;
+	color:#333;
+}
+
+.prodNumber img, .prodNumber1 img {
+	margin:0px 0px 2px 9px;
+}
+
+.prodMore, .prodMore a{
+	clear:both;
+	font-size:11px;
+	text-decoration:none;
+	width:721px;
+	text-align:right;
+	color:#5ea8eb;
+}
+
+
+.prodDesc1{
+	float:left;
+	/*width:450px;*/
+	width:63%;
+	padding: 13px 10px 0 20px;
+}
+
+.prodDesc1 h2{
+	font-size:14px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	color:#333333;
+	margin-bottom:3px;
+	font-weight: bolder;
+}
+
+
+.prodDesc1 p{
+	font-size:11px;
+	margin-bottom:15px;
+}
+
+.prodDesc1 a{
+	color:#61a3f1;
+	text-decoration:none;
+}
+
+.prodNumber1{
+	float:left;
+	width:127px;
+	margin-top:14px;
+	height: 140px;
+	padding-left: 5px;
+}
+
+.formCell{
+	clear:both;
+	width:550px;
+	margin:5px;
+	height: 25px;
+}
+
+.formLabel{
+	float:left;
+	width:160px;
+	text-align:right;
+	padding-right:20px;
+	padding-top: 5px;
+}
+
+.formInput{
+	float:left;
+	width:240px;
+}
+
+.formAlert{
+	float:left;
+	width:130px;
+}
+
+.toolTip{
+	position: relative;
+	z-index: 0;
+	text-decoration: none;
+}
+
+.toolTip:hover{
+	background-color: transparent;
+	z-index: 50;
+	text-decoration: none;
+}
+
+.toolTip span{ /*CSS for enlarged image*/
+	position: absolute;
+	background-color: #fcfae7;
+	padding: 7px;
+	left: -1000px;
+	border: 1px solid #7b7b7b;
+	visibility: hidden;
+	color:#333;
+	text-decoration: none;
+	line-brake:none;
+	display:inline-block;
+	white-space:nowrap;
+}
+
+
+.toolTip:hover span{ /*CSS for enlarged image on hover*/
+	visibility: visible;
+	top: 0;
+	left: 10px; /*position where enlarged image should offset horizontally */
+	text-decoration: none;
+
+}
+
+.prodSrcRef{
+	margin:0px;
+	width:528px;
+	height:165px;
+	border-top:solid 1px #bcbcbc;
+	clear:both;
+	padding:10px 7px 0px;
+}
+
+.prodwish{
+	margin:0px;
+	width:528px;
+	height:215px;
+	border-top:solid 1px #bcbcbc;
+	clear:both;
+	padding:10px 7px 0px;
+}
+
+.prodSrcDesc{
+	float:left;
+	width:265px;
+	padding: 13px 10px 0 15px;
+}
+
+.prodSrcDesc h2{
+	font-size:14px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	color:#333333;
+	margin-bottom:3px;
+	font-weight: bolder;
+}
+
+.prodSrcDesc h3{
+	font-size:15px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	color:#e67f42;
+	font-weight:bold;
+	margin-bottom:4px;
+}
+
+.prodSrcDesc h4{
+	font-size:12px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	color:#e67f42;
+	text-transform: uppercase;
+	margin-bottom:6px;
+}
+
+.prodSrcDesc h5{
+	 font-size:12px;
+	 font-family:Verdana, Arial, Helvetica, sans-serif;
+	 color:#333333;
+	 margin-bottom:10px;
+}
+
+.prodSrcDesc p{
+	font-size:11px;
+	margin-bottom:15px;
+}
+
+.prodSrcDesc a{
+	color:#61a3f1;
+}
+
+/* ----------------IMAGE SLIDER------------- */
+#SlideItMoo_outer {
+	background:#FFF;
+	display:block;
+	position:relative;
+}
+/* create custom forward-backward buttons for this container */
+#SlideItMoo_outer .SlideItMoo_forward{ 
+	display:block; 
+	position:absolute; 
+	cursor:pointer; 
+	width:30px; 
+	height:163px; 
+	bottom:0px; 
+	right:5px; 
+	background: url(../images/rigthArrow.jpg) no-repeat center;  
+}
+#SlideItMoo_outer .SlideItMoo_back { 
+	display:block; 
+	position:absolute; 
+	cursor:pointer; 
+	width:30px; 
+	height:163px; 
+	bottom:0px;
+	left:5px; 
+	background: url(../images/leftArrow.jpg) no-repeat center;  
+}
+
+/* the width is set to show the number of thumbnails that will be visible */
+#SlideItMoo_inner{
+	position:relative;
+	overflow:hidden;
+	border-bottom: solid 1px #bcbcbc;
+	border-top: solid 1px #bcbcbc;
+	margin: 0 auto;
+	height: 161px;
+}
+/* the thumbnails container; set a width on it so everything will be fine */
+#SlideItMoo_items { 
+	display:block; 
+	position:relative; 
+}
+/* single element design */
+#SlideItMoo_items div.SlideItMoo_element { 
+	display:block; 
+	position:relative; 
+	float:left; 
+	margin:0px; 
+	font-size:11px;
+	padding:10px 0px 0px; 
+	width:165px; 
+	text-align:center; 
+	color:#000;
+	text-align:center;
+	background: url(../images/productBg.jpg) top right no-repeat;  
+}
+#SlideItMoo_items a { padding:0px; margin:3px 0px 3px; clear:both; display:block; background:#333333; padding:2px; }
+#SlideItMoo_items a img{ border:none; }
+#SlideItMoo_items div.SlideItMoo_element p{ margin: 0 auto; text-align:center;}

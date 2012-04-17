@@ -1,0 +1,125 @@
+﻿DIV .test
+{
+	color: Gray;
+}
+.test TABLE
+{
+	border: solid 1px black;
+}
+.test TABLE TH
+{
+	color: Red;
+	font-size: 10px;
+	font-weight: bold;
+	background-color: Blue;
+}
+.test TABLE TD
+{
+	color: Black;
+	font-family: Arial Narrow;
+	font-size: 10px;
+}
+
+.cajaGrande
+{
+	width: 250px;
+	height: auto;
+	background: #CCCCCC;
+	float: left;
+}
+.cajaArriba
+{
+	
+}
+.cajaArriba a:link, .cajaArriba a:visited, .cajaArriba a:hover, .cajaArriba a:active
+{
+	text-decoration: none;
+}
+.cajaFlecha
+{
+	float: left;
+	
+}
+.estiloFlecha
+{
+	float: left;	
+	background-repeat: no-repeat;
+}
+.cajaAbajo
+{
+	
+	
+}
+.medio
+{
+	width: 250px;
+	height: 0px;
+	overflow: hidden;
+	font-size: 11px;
+	text-align: left;
+	padding: 5px 0 0 35px;
+	_width: auto;
+}
+.advancemedio
+{
+	overflow: hidden;
+	font-size: 11px;
+	text-align: left;
+	padding: 5px 0 0 35px;
+	_width: auto;
+}
+/* Estilos para javascript */
+/* Estos no se pueden borrar, son necesarios para el javascript */
+.broMed
+{
+}
+.subjectMed
+{
+}
+.resMed
+{
+}
+/* Fin estilos javascript */
+
+/* Fin cajas de menu de la izquierda */
+.advanceMed
+{
+	text-align: center;
+}
+/* Este obtiene los estilos del medio y nada mas añade el text align que tiene que ser center*/
+.advanceBot
+{
+	margin-bottom: 0px;
+}
+/* Este obtiene todos los estilos de cajaAbajo, pero el añade el de margin botton que es especial para este*/
+.cajaEmail
+{
+	height: 120px;
+}
+.emailUpdate
+{
+	font-size: 10px;
+	width: 300px;
+	visibility: hidden;
+	position: absolute;
+	background-color: White;
+	padding: 10px 10px 10px 10px;
+	border: solid 1px #666;
+}
+.mailMed
+{
+	width: 100%;
+	padding: 5px 0 0 0;
+	overflow: visible;
+	text-align: center;
+}
+/* Fin cajas menus*/
+
+dl.accordion2 ul li a.Chossed
+{
+    color: #ffffff;
+	text-decoration: none;
+	background: url(../images2/navHover.jpg) repeat-x;
+	z-index: 10;
+	display: block;
+}

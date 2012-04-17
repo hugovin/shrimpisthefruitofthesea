@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode title="SiteSelection" url="~/CMS/CMS_SiteSelection.aspx">
+    <siteMapNode title="ContentGroupSelection" url="~/CMS/CMS_GroupSelection.aspx">
+      <siteMapNode title="Main" url="~/CMS/CMS_MainSite.aspx">
+        <siteMapNode title="Home" url="~/CMS/mnt_Home.aspx"/>
+        <siteMapNode title="Administrator" url="~/CMS/mnt_Administrator.aspx" />
+        <siteMapNode title="Top Navigation Space" url="~/CMS/mnt_TopNavigationSpace.aspx"/>
+        <siteMapNode title="Feature Brands" url="~/CMS/mnt_FeaturedBrands.aspx"/>
+        <siteMapNode title="About Us" url="~/CMS/mnt_AboutUs.aspx"/>
+        <siteMapNode title="Whats New" url="~/CMS/mnt_WhatsNew.aspx"/>
+        <siteMapNode title="Feature Products" url="~/CMS/mnt_FeatureProducts.aspx"/>
+        <siteMapNode title="Theater" url="~/CMS/mnt_FeaturedSpace.aspx"/>
+        <siteMapNode title="Best Sellers" url="~/CMS/mnt_BestSellers.aspx"/>
+        <siteMapNode title="Browse Navigation" url="~/CMS/mnt_Browse.aspx"/>
+        <siteMapNode title="Product Finder" url="~/CMS/mnt_Finder.aspx"/>
+        <siteMapNode title="Subjects" url="~/CMS/mnt_Subjects.aspx"/>
+        <siteMapNode title="HighLights" url="~/CMS/mnt_HighLights.aspx"/>
+        <siteMapNode title="Specials" url="~/CMS/mnt_Specials.aspx"/>
+        <siteMapNode title="Resource Center" url="~/CMS/mnt_Generics.aspx?Generic=1">
+          <siteMapNode title="Template A" url="~/CMS/mnt_generic_a.aspx"/>
+          <siteMapNode title="Template B" url="~/CMS/mnt_generic_b.aspx"/>
+          <siteMapNode title="Template C" url="~/CMS/mnt_generic_c.aspx"/>
+          <siteMapNode title="Template D" url="~/CMS/mnt_generic_d.aspx"/>
+          <siteMapNode title="Template E" url="~/CMS/mnt_generic_e.aspx"/>
+          <siteMapNode title="Free Tools" url="~/CMS/mnt_FreeTools.aspx"/>
+        </siteMapNode>
+        <siteMapNode title="About Us" url="~/CMS/mnt_Generics.aspx?Generic=2">
+        </siteMapNode>
+        <siteMapNode title="HelpFulLinks" url="~/CMS/mnt_HelpFulLinks.aspx"/>
+        <siteMapNode title="Shopping Cart Adds" url="~/CMS/mnt_AddSc.aspx"/>
+        <siteMapNode title="Adds" url="~/CMS/mnt_AddSc.aspx?pages=true"/>
+        <siteMapNode title="Resource Center Main Page" url="~/CMS/mnt_ResourCenter.aspx"/>
+        <siteMapNode title="Sidebar" url="~/CMS/mnt_SideBar.aspx"/>
+      </siteMapNode>
+      <siteMapNode title="Site" url="~/CMS/mnt_Site.aspx">
+      </siteMapNode>
+
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>
